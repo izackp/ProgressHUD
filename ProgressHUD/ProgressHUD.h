@@ -19,14 +19,12 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------
+
 //#define sheme_white
 #define sheme_black
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 #define HUD_STATUS_FONT			[UIFont boldSystemFontOfSize:16]
-//-------------------------------------------------------------------------------------------------------------------------------------------------
+
 #ifdef sheme_white
 #define HUD_STATUS_COLOR		[UIColor whiteColor]
 #define HUD_SPINNER_COLOR		[UIColor whiteColor]
@@ -34,7 +32,7 @@
 #define HUD_IMAGE_SUCCESS		[UIImage imageNamed:@"ProgressHUD.bundle/success-white.png"]
 #define HUD_IMAGE_ERROR			[UIImage imageNamed:@"ProgressHUD.bundle/error-white.png"]
 #endif
-//-------------------------------------------------------------------------------------------------------------------------------------------------
+
 #ifdef sheme_black
 #define HUD_STATUS_COLOR		[UIColor blackColor]
 #define HUD_SPINNER_COLOR		[UIColor blackColor]
@@ -42,11 +40,10 @@
 #define HUD_IMAGE_SUCCESS		[UIImage imageNamed:@"ProgressHUD.bundle/success-black.png"]
 #define HUD_IMAGE_ERROR			[UIImage imageNamed:@"ProgressHUD.bundle/error-black.png"]
 #endif
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------
+
 @interface ProgressHUD : UIView
-//-------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 + (ProgressHUD *)shared;
 
