@@ -174,7 +174,7 @@
 
 {
 	double rotate;
-	
+
 	UIInterfaceOrientation orient = [[UIApplication sharedApplication] statusBarOrientation];
 	
 	if (orient == UIInterfaceOrientationPortrait)			rotate = 0.0;
