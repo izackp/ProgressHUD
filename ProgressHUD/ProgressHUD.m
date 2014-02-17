@@ -173,7 +173,7 @@
 - (void)hudOrient
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
-	CGFloat rotate;
+	double rotate;
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	UIInterfaceOrientation orient = [[UIApplication sharedApplication] statusBarOrientation];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
@@ -238,8 +238,8 @@
 		NSUInteger options = UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseOut;
 
 		[UIView animateWithDuration:0.15 delay:0 options:options animations:^{
-			hud.transform = CGAffineTransformScale(hud.transform, 1/1.4, 1/1.4);
-			hud.alpha = 1;
+			self.hud.transform = CGAffineTransformScale(self.hud.transform, 1/1.4, 1/1.4);
+			self.hud.alpha = 1;
 		}
 		completion:^(BOOL finished){ }];
 	}
@@ -254,8 +254,8 @@
 		NSUInteger options = UIViewAnimationOptionAllowUserInteraction | UIViewAnimationCurveEaseIn;
 
 		[UIView animateWithDuration:0.15 delay:0 options:options animations:^{
-			hud.transform = CGAffineTransformScale(hud.transform, 0.7, 0.7);
-			hud.alpha = 0;
+			self.hud.transform = CGAffineTransformScale(self.hud.transform, 0.7, 0.7);
+			self.hud.alpha = 0;
 		}
 		completion:^(BOOL finished)
 		{
